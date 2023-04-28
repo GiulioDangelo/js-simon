@@ -18,6 +18,10 @@ const reload = setInterval(function () {
 	document.querySelector(".seconds").innerHTML = seconds + "s";
     
     if (timeLeft < 0) {
+		document.querySelector(".days").innerHTML = "0d:";
+		document.querySelector(".hours").innerHTML = "0h:";
+		document.querySelector(".minutes").innerHTML = "0m:";
+		document.querySelector(".seconds").innerHTML = "0s";
         clearInterval(reload);
     }
 
